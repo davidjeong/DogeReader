@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		536EA1811CAAB3DE0095F1C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1801CAAB3DE0095F1C5 /* AppDelegate.swift */; };
+		536EA1831CAAB3DE0095F1C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1821CAAB3DE0095F1C5 /* ViewController.swift */; };
+		536EA1861CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1841CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld */; };
+		536EA1881CAAB3DE0095F1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */; };
+		536EA18B1CAAB3DE0095F1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536EA1891CAAB3DE0095F1C5 /* Main.storyboard */; };
+		536EA1961CAAB3DE0095F1C5 /* DogeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1951CAAB3DE0095F1C5 /* DogeReaderTests.swift */; };
+		536EA1A11CAAB3DE0095F1C5 /* DogeReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1A01CAAB3DE0095F1C5 /* DogeReaderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		536EA1921CAAB3DE0095F1C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536EA1751CAAB3DE0095F1C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 536EA17C1CAAB3DE0095F1C5;
+			remoteInfo = DogeReader;
+		};
+		536EA19D1CAAB3DE0095F1C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 536EA1751CAAB3DE0095F1C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 536EA17C1CAAB3DE0095F1C5;
+			remoteInfo = DogeReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		536EA17D1CAAB3DE0095F1C5 /* DogeReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		536EA1801CAAB3DE0095F1C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		536EA1821CAAB3DE0095F1C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		536EA1851CAAB3DE0095F1C5 /* DogeReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogeReader.xcdatamodel; sourceTree = "<group>"; };
+		536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		536EA18A1CAAB3DE0095F1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		536EA18C1CAAB3DE0095F1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536EA1911CAAB3DE0095F1C5 /* DogeReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogeReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		536EA1951CAAB3DE0095F1C5 /* DogeReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeReaderTests.swift; sourceTree = "<group>"; };
+		536EA1971CAAB3DE0095F1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536EA19C1CAAB3DE0095F1C5 /* DogeReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogeReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		536EA1A01CAAB3DE0095F1C5 /* DogeReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeReaderUITests.swift; sourceTree = "<group>"; };
+		536EA1A21CAAB3DE0095F1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		536EA17A1CAAB3DE0095F1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536EA18E1CAAB3DE0095F1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536EA1991CAAB3DE0095F1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		536EA1741CAAB3DE0095F1C5 = {
+			isa = PBXGroup;
+			children = (
+				536EA17F1CAAB3DE0095F1C5 /* DogeReader */,
+				536EA1941CAAB3DE0095F1C5 /* DogeReaderTests */,
+				536EA19F1CAAB3DE0095F1C5 /* DogeReaderUITests */,
+				536EA17E1CAAB3DE0095F1C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		536EA17E1CAAB3DE0095F1C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				536EA17D1CAAB3DE0095F1C5 /* DogeReader.app */,
+				536EA1911CAAB3DE0095F1C5 /* DogeReaderTests.xctest */,
+				536EA19C1CAAB3DE0095F1C5 /* DogeReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		536EA17F1CAAB3DE0095F1C5 /* DogeReader */ = {
+			isa = PBXGroup;
+			children = (
+				536EA1801CAAB3DE0095F1C5 /* AppDelegate.swift */,
+				536EA1821CAAB3DE0095F1C5 /* ViewController.swift */,
+				536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */,
+				536EA1891CAAB3DE0095F1C5 /* Main.storyboard */,
+				536EA18C1CAAB3DE0095F1C5 /* Info.plist */,
+				536EA1841CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld */,
+			);
+			path = DogeReader;
+			sourceTree = "<group>";
+		};
+		536EA1941CAAB3DE0095F1C5 /* DogeReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				536EA1951CAAB3DE0095F1C5 /* DogeReaderTests.swift */,
+				536EA1971CAAB3DE0095F1C5 /* Info.plist */,
+			);
+			path = DogeReaderTests;
+			sourceTree = "<group>";
+		};
+		536EA19F1CAAB3DE0095F1C5 /* DogeReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				536EA1A01CAAB3DE0095F1C5 /* DogeReaderUITests.swift */,
+				536EA1A21CAAB3DE0095F1C5 /* Info.plist */,
+			);
+			path = DogeReaderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		536EA17C1CAAB3DE0095F1C5 /* DogeReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536EA1A51CAAB3DE0095F1C5 /* Build configuration list for PBXNativeTarget "DogeReader" */;
+			buildPhases = (
+				536EA1791CAAB3DE0095F1C5 /* Sources */,
+				536EA17A1CAAB3DE0095F1C5 /* Frameworks */,
+				536EA17B1CAAB3DE0095F1C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DogeReader;
+			productName = DogeReader;
+			productReference = 536EA17D1CAAB3DE0095F1C5 /* DogeReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		536EA1901CAAB3DE0095F1C5 /* DogeReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536EA1A81CAAB3DE0095F1C5 /* Build configuration list for PBXNativeTarget "DogeReaderTests" */;
+			buildPhases = (
+				536EA18D1CAAB3DE0095F1C5 /* Sources */,
+				536EA18E1CAAB3DE0095F1C5 /* Frameworks */,
+				536EA18F1CAAB3DE0095F1C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				536EA1931CAAB3DE0095F1C5 /* PBXTargetDependency */,
+			);
+			name = DogeReaderTests;
+			productName = DogeReaderTests;
+			productReference = 536EA1911CAAB3DE0095F1C5 /* DogeReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		536EA19B1CAAB3DE0095F1C5 /* DogeReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 536EA1AB1CAAB3DE0095F1C5 /* Build configuration list for PBXNativeTarget "DogeReaderUITests" */;
+			buildPhases = (
+				536EA1981CAAB3DE0095F1C5 /* Sources */,
+				536EA1991CAAB3DE0095F1C5 /* Frameworks */,
+				536EA19A1CAAB3DE0095F1C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				536EA19E1CAAB3DE0095F1C5 /* PBXTargetDependency */,
+			);
+			name = DogeReaderUITests;
+			productName = DogeReaderUITests;
+			productReference = 536EA19C1CAAB3DE0095F1C5 /* DogeReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		536EA1751CAAB3DE0095F1C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Juhwan Jeong";
+				TargetAttributes = {
+					536EA17C1CAAB3DE0095F1C5 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					536EA1901CAAB3DE0095F1C5 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 536EA17C1CAAB3DE0095F1C5;
+					};
+					536EA19B1CAAB3DE0095F1C5 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 536EA17C1CAAB3DE0095F1C5;
+					};
+				};
+			};
+			buildConfigurationList = 536EA1781CAAB3DE0095F1C5 /* Build configuration list for PBXProject "DogeReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 536EA1741CAAB3DE0095F1C5;
+			productRefGroup = 536EA17E1CAAB3DE0095F1C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				536EA17C1CAAB3DE0095F1C5 /* DogeReader */,
+				536EA1901CAAB3DE0095F1C5 /* DogeReaderTests */,
+				536EA19B1CAAB3DE0095F1C5 /* DogeReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		536EA17B1CAAB3DE0095F1C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536EA1881CAAB3DE0095F1C5 /* Assets.xcassets in Resources */,
+				536EA18B1CAAB3DE0095F1C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536EA18F1CAAB3DE0095F1C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536EA19A1CAAB3DE0095F1C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		536EA1791CAAB3DE0095F1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536EA1831CAAB3DE0095F1C5 /* ViewController.swift in Sources */,
+				536EA1861CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld in Sources */,
+				536EA1811CAAB3DE0095F1C5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536EA18D1CAAB3DE0095F1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536EA1961CAAB3DE0095F1C5 /* DogeReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		536EA1981CAAB3DE0095F1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536EA1A11CAAB3DE0095F1C5 /* DogeReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		536EA1931CAAB3DE0095F1C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 536EA17C1CAAB3DE0095F1C5 /* DogeReader */;
+			targetProxy = 536EA1921CAAB3DE0095F1C5 /* PBXContainerItemProxy */;
+		};
+		536EA19E1CAAB3DE0095F1C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 536EA17C1CAAB3DE0095F1C5 /* DogeReader */;
+			targetProxy = 536EA19D1CAAB3DE0095F1C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		536EA1891CAAB3DE0095F1C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				536EA18A1CAAB3DE0095F1C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		536EA1A31CAAB3DE0095F1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		536EA1A41CAAB3DE0095F1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		536EA1A61CAAB3DE0095F1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DogeReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidjeong.DogeReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		536EA1A71CAAB3DE0095F1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DogeReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidjeong.DogeReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		536EA1A91CAAB3DE0095F1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DogeReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidjeong.DogeReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogeReader.app/Contents/MacOS/DogeReader";
+			};
+			name = Debug;
+		};
+		536EA1AA1CAAB3DE0095F1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DogeReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidjeong.DogeReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DogeReader.app/Contents/MacOS/DogeReader";
+			};
+			name = Release;
+		};
+		536EA1AC1CAAB3DE0095F1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DogeReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidjeong.DogeReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DogeReader;
+			};
+			name = Debug;
+		};
+		536EA1AD1CAAB3DE0095F1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DogeReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidjeong.DogeReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DogeReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		536EA1781CAAB3DE0095F1C5 /* Build configuration list for PBXProject "DogeReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536EA1A31CAAB3DE0095F1C5 /* Debug */,
+				536EA1A41CAAB3DE0095F1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		536EA1A51CAAB3DE0095F1C5 /* Build configuration list for PBXNativeTarget "DogeReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536EA1A61CAAB3DE0095F1C5 /* Debug */,
+				536EA1A71CAAB3DE0095F1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		536EA1A81CAAB3DE0095F1C5 /* Build configuration list for PBXNativeTarget "DogeReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536EA1A91CAAB3DE0095F1C5 /* Debug */,
+				536EA1AA1CAAB3DE0095F1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		536EA1AB1CAAB3DE0095F1C5 /* Build configuration list for PBXNativeTarget "DogeReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				536EA1AC1CAAB3DE0095F1C5 /* Debug */,
+				536EA1AD1CAAB3DE0095F1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		536EA1841CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				536EA1851CAAB3DE0095F1C5 /* DogeReader.xcdatamodel */,
+			);
+			currentVersion = 536EA1851CAAB3DE0095F1C5 /* DogeReader.xcdatamodel */;
+			path = DogeReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 536EA1751CAAB3DE0095F1C5 /* Project object */;
+}
