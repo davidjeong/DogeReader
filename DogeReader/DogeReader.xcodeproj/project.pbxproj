@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		536EA1811CAAB3DE0095F1C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1801CAAB3DE0095F1C5 /* AppDelegate.swift */; };
-		536EA1831CAAB3DE0095F1C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1821CAAB3DE0095F1C5 /* ViewController.swift */; };
+		532AB9531CAAC9F30097C101 /* DRMainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB9521CAAC9F30097C101 /* DRMainSplitViewController.swift */; };
+		532AB9551CAACDA40097C101 /* DRSidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532AB9541CAACDA40097C101 /* DRSidebarViewController.swift */; };
+		536EA1811CAAB3DE0095F1C5 /* DRAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1801CAAB3DE0095F1C5 /* DRAppDelegate.swift */; };
 		536EA1861CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1841CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld */; };
 		536EA1881CAAB3DE0095F1C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */; };
 		536EA18B1CAAB3DE0095F1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536EA1891CAAB3DE0095F1C5 /* Main.storyboard */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		532AB9521CAAC9F30097C101 /* DRMainSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRMainSplitViewController.swift; sourceTree = "<group>"; };
+		532AB9541CAACDA40097C101 /* DRSidebarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRSidebarViewController.swift; sourceTree = "<group>"; };
 		536EA17D1CAAB3DE0095F1C5 /* DogeReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogeReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		536EA1801CAAB3DE0095F1C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		536EA1821CAAB3DE0095F1C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		536EA1801CAAB3DE0095F1C5 /* DRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRAppDelegate.swift; sourceTree = "<group>"; };
 		536EA1851CAAB3DE0095F1C5 /* DogeReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogeReader.xcdatamodel; sourceTree = "<group>"; };
 		536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		536EA18A1CAAB3DE0095F1C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,10 +99,11 @@
 		536EA17F1CAAB3DE0095F1C5 /* DogeReader */ = {
 			isa = PBXGroup;
 			children = (
-				536EA1801CAAB3DE0095F1C5 /* AppDelegate.swift */,
-				536EA1821CAAB3DE0095F1C5 /* ViewController.swift */,
+				536EA1801CAAB3DE0095F1C5 /* DRAppDelegate.swift */,
 				536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */,
 				536EA1891CAAB3DE0095F1C5 /* Main.storyboard */,
+				532AB9541CAACDA40097C101 /* DRSidebarViewController.swift */,
+				532AB9521CAAC9F30097C101 /* DRMainSplitViewController.swift */,
 				536EA18C1CAAB3DE0095F1C5 /* Info.plist */,
 				536EA1841CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld */,
 			);
@@ -255,9 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				536EA1831CAAB3DE0095F1C5 /* ViewController.swift in Sources */,
+				532AB9531CAAC9F30097C101 /* DRMainSplitViewController.swift in Sources */,
+				532AB9551CAACDA40097C101 /* DRSidebarViewController.swift in Sources */,
 				536EA1861CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld in Sources */,
-				536EA1811CAAB3DE0095F1C5 /* AppDelegate.swift in Sources */,
+				536EA1811CAAB3DE0095F1C5 /* DRAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +483,7 @@
 				536EA1A71CAAB3DE0095F1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		536EA1A81CAAB3DE0095F1C5 /* Build configuration list for PBXNativeTarget "DogeReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +492,7 @@
 				536EA1AA1CAAB3DE0095F1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		536EA1AB1CAAB3DE0095F1C5 /* Build configuration list for PBXNativeTarget "DogeReaderUITests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +501,7 @@
 				536EA1AD1CAAB3DE0095F1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

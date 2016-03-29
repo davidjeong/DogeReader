@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  DRAppDelegate.swift
 //  DogeReader
 //
 //  Created by Juhwan Jeong on 3/29/16.
@@ -9,12 +9,31 @@
 import Cocoa
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+class DRAppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        
+        // url handler.
+        
+        //let clientId = "1H3TJGmThSHMgQ"
+        
+        let authorizeUrlAsString = "https://www.reddit.com/api/v1/authorize?client_id=1H3TJGmThSHMgQ&response_type=code&state=test&redirect_uri=dogereader://response&duration=permanent&scope=identity"
+        let authorizeUrl = NSURL(string: authorizeUrlAsString)
+        
+        NSWorkspace.sharedWorkspace().openURL(authorizeUrl!)
+        /*
+         https://www.reddit.com/api/v1/authorize?client_id=CLIENT_ID&response_type=TYPE&state=RANDOM_STRING&redirect_uri=URI&duration=DURATION&scope=SCOPE_STRING
+        */
+        
+        let appleEventManager = NSAppleEventManager.sharedAppleEventManager()
+        appleEventManager.setEventHandler(self, andSelector: #selector(self.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
+        
+        let tokenUrlAsString = "https://www.reddit.com/api/v1/access_token"
+        var request = NSMutableURLRequest(URL: NSURL(string: tokenUrlAsString)!)
+        var session = NSURLSession.sharedSession()
+        
+        request.HTTPMethod = "POST"
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -161,6 +180,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // If we got here, it is time to quit.
         return .TerminateNow
     }
+    
+    func handleGetURLEvent(event: NSAppleEventDescriptor, replyEvent: NSAppleEventDescriptor) {
+        let urlAsString = event.paramDescriptorForKeyword(AEKeyword(keyDirectObject))!.stringValue
+        let url = NSURL(string: urlAsString!)
+        if (url?.scheme == "dogereader") {
+            let queryParams = NSArray(array: (url?.query?.componentsSeparatedByString("&"))!)
+            let codeParam = queryParams.filteredArrayUsingPredicate(NSPredicate(format: "SELF BEGINSWITH %@", "code="))
+            let codeQuery = codeParam[0]
+            let code = codeQuery.stringByReplacingOccurrencesOfString("code=", withString: "")
+            print("My code is", code)
+            
+        }
+    }
+    
 
 }
 
