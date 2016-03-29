@@ -1,2 +1,2 @@
 # doge-reader
-Reddit Reader for Reddit for Mac OS
+Native Mac OS Reader for Reddit
