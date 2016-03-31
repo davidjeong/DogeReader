@@ -17,7 +17,7 @@ class DRSidebarViewController: NSViewController {
         super.viewDidLoad()
         
         // TODO: We actually want to call below code upon user click on login button
-        let authorizeUrlAsString = String(format: "%@?client_id=%@&response_type=%@&state=%@&redirect_uri=%@&duration=%@&scope=%@", DRAppConstants.authorizeUrl, DRAppConstants.clientId, "code", "test", DRAppConstants.redirectUri, "permanent", DRAppConstants.scope)
+        let authorizeUrlAsString = String(format: "%@?client_id=%@&response_type=%@&state=%@&redirect_uri=%@&duration=%@&scope=%@", DRAppConstants.buildURL(DRAppConstants.Endpoints.authorizeURL), DRAppConstants.clientID, "code", "test", DRAppConstants.redirectURI, "permanent", DRAppConstants.scope)
         let authorizeUrl = NSURL(string: authorizeUrlAsString)
         
         NSWorkspace.sharedWorkspace().openURL(authorizeUrl!)
@@ -35,18 +35,17 @@ class DRSidebarViewController: NSViewController {
             let codeParam = queryParams.filteredArrayUsingPredicate(NSPredicate(format: "SELF BEGINSWITH %@", "code="))
             let codeQuery = codeParam[0]
             let code = codeQuery.stringByReplacingOccurrencesOfString("code=", withString: "")
-            print("My code is", code)
             
-            let body = String(format:"grant_type=%@&code=%@&redirect_uri=%@", "authorization_code", code, DRAppConstants.redirectUri)
+            let body = String(format:"grant_type=%@&code=%@&redirect_uri=%@", "authorization_code", code, DRAppConstants.redirectURI)
             let bodyData: NSData = body.dataUsingEncoding(NSASCIIStringEncoding, allowLossyConversion: true)!
             let bodyLength: String = String(bodyData.length)
             
-            let authorizationString = String(format: "%@:", DRAppConstants.clientId)
+            let authorizationString = String(format: "%@:", DRAppConstants.clientID)
             let authorizationData = authorizationString.dataUsingEncoding(NSUTF8StringEncoding)
             let authorizationValue = String(format: "Basic %@", (authorizationData?.base64EncodedStringWithOptions([]))!)
             
             
-            let request = NSMutableURLRequest(URL: NSURL(string: DRAppConstants.accessTokenUrl)!)
+            let request = NSMutableURLRequest(URL: NSURL(string: DRAppConstants.buildURL(DRAppConstants.Endpoints.accessTokenURL))!)
             request.HTTPMethod = "POST"
             //request.addValue(Constants.clientId, forHTTPHeaderField: "user")
             request.setValue(bodyLength, forHTTPHeaderField: "Content-Length")
@@ -55,8 +54,9 @@ class DRSidebarViewController: NSViewController {
             request.HTTPBody = bodyData;
             
             let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
-                let responseJson = try!NSJSONSerialization.JSONObjectWithData(data!, options: .MutableLeaves) as! NSDictionary
-                print(responseJson)
+                let responseJSON = try!NSJSONSerialization.JSONObjectWithData(data!, options: .MutableLeaves) as! NSDictionary
+                DRAppConstants.ApplicationInfo.accessToken = responseJSON.objectForKey("access_token") as! String
+                DRAppConstants.ApplicationInfo.loggedIn = true
             })
             task.resume()
         }

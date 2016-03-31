@@ -16,6 +16,8 @@
 		536EA1961CAAB3DE0095F1C5 /* DogeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1951CAAB3DE0095F1C5 /* DogeReaderTests.swift */; };
 		536EA1A11CAAB3DE0095F1C5 /* DogeReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1A01CAAB3DE0095F1C5 /* DogeReaderUITests.swift */; };
 		5383D80A1CADAEBF0082465F /* DRAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D8091CADAEBF0082465F /* DRAppConstants.swift */; };
+		5383D80B1CADBB7D0082465F /* DRAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D8091CADAEBF0082465F /* DRAppConstants.swift */; };
+		5383D80C1CADBB7E0082465F /* DRAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D8091CADAEBF0082465F /* DRAppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536EA1961CAAB3DE0095F1C5 /* DogeReaderTests.swift in Sources */,
+				5383D80B1CADBB7D0082465F /* DRAppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536EA1A11CAAB3DE0095F1C5 /* DogeReaderUITests.swift in Sources */,
+				5383D80C1CADBB7E0082465F /* DRAppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
