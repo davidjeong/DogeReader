@@ -670,7 +670,7 @@
             <objects>
                 <splitViewController id="rtT-Rs-LjT" customClass="DRMainSplitViewController" customModule="DogeReader" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem holdingPriority="260" behavior="sidebar" id="79c-EY-Rv2"/>
+                        <splitViewItem canCollapse="YES" holdingPriority="260" behavior="sidebar" id="79c-EY-Rv2"/>
                         <splitViewItem holdingPriority="255" behavior="contentList" id="XlZ-T4-EnJ"/>
                     </splitViewItems>
                     <splitView key="splitView" wantsLayer="YES" dividerStyle="thin" vertical="YES" id="DWO-Gt-Slr">
@@ -694,14 +694,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="26" horizontalPageScroll="10" verticalLineScroll="26" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9C-Xo-Ceq">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9C-Xo-Ceq">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <clipView key="contentView" drawsBackground="NO" id="Z2y-hY-fOw">
                                     <rect key="frame" x="2" y="1" width="448" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="dhX-Xv-R3E" id="I2y-By-OUl">
-                                            <rect key="frame" x="0.0" y="0.0" width="448" height="298"/>
+                                        <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" indentationPerLevel="16" outlineTableColumn="dhX-Xv-R3E" id="I2y-By-OUl">
+                                            <rect key="frame" x="0.0" y="0.0" width="448" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -806,7 +806,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="K4R-9c-HEt">
-                                            <rect key="frame" x="0.0" y="0.0" width="448" height="298"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="448" height="0.0"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>

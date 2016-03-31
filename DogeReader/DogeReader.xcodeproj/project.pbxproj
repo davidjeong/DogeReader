@@ -15,6 +15,7 @@
 		536EA18B1CAAB3DE0095F1C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536EA1891CAAB3DE0095F1C5 /* Main.storyboard */; };
 		536EA1961CAAB3DE0095F1C5 /* DogeReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1951CAAB3DE0095F1C5 /* DogeReaderTests.swift */; };
 		536EA1A11CAAB3DE0095F1C5 /* DogeReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536EA1A01CAAB3DE0095F1C5 /* DogeReaderUITests.swift */; };
+		5383D80A1CADAEBF0082465F /* DRAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D8091CADAEBF0082465F /* DRAppConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		536EA19C1CAAB3DE0095F1C5 /* DogeReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogeReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		536EA1A01CAAB3DE0095F1C5 /* DogeReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeReaderUITests.swift; sourceTree = "<group>"; };
 		536EA1A21CAAB3DE0095F1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5383D8091CADAEBF0082465F /* DRAppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRAppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,14 @@
 		536EA17F1CAAB3DE0095F1C5 /* DogeReader */ = {
 			isa = PBXGroup;
 			children = (
+				5383D8091CADAEBF0082465F /* DRAppConstants.swift */,
 				536EA1801CAAB3DE0095F1C5 /* DRAppDelegate.swift */,
-				536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */,
-				536EA1891CAAB3DE0095F1C5 /* Main.storyboard */,
 				532AB9541CAACDA40097C101 /* DRSidebarViewController.swift */,
 				532AB9521CAAC9F30097C101 /* DRMainSplitViewController.swift */,
-				536EA18C1CAAB3DE0095F1C5 /* Info.plist */,
+				536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */,
+				536EA1891CAAB3DE0095F1C5 /* Main.storyboard */,
 				536EA1841CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld */,
+				536EA18C1CAAB3DE0095F1C5 /* Info.plist */,
 			);
 			path = DogeReader;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				532AB9551CAACDA40097C101 /* DRSidebarViewController.swift in Sources */,
 				536EA1861CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld in Sources */,
 				536EA1811CAAB3DE0095F1C5 /* DRAppDelegate.swift in Sources */,
+				5383D80A1CADAEBF0082465F /* DRAppConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
