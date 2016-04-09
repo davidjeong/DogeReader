@@ -8,22 +8,14 @@
 
 import Cocoa
 
-class DRSidebarViewController: NSViewController {
+class DRSidebarViewController: NSViewController, NSOutlineViewDelegate, NSOutlineViewDataSource {
 
     // MARK: - Lifecycle
     @IBOutlet weak var sourceList: NSOutlineView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // TODO: We actually want to call below code upon user click on login button
-        let authorizeUrlAsString = String(format: "%@?client_id=%@&response_type=%@&state=%@&redirect_uri=%@&duration=%@&scope=%@", DRAppConstants.buildURL(DRAppConstants.Endpoints.authorizeURL), DRAppConstants.clientID, "code", "test", DRAppConstants.redirectURI, "permanent", DRAppConstants.scope)
-        let authorizeUrl = NSURL(string: authorizeUrlAsString)
-        
-        NSWorkspace.sharedWorkspace().openURL(authorizeUrl!)
-        
-        let appleEventManager = NSAppleEventManager.sharedAppleEventManager()
-        appleEventManager.setEventHandler(self, andSelector: #selector(self.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
+        self.sourceList.expandItem(nil, expandChildren: true)
     }
     
     // MARK: - Private Functions
@@ -60,5 +52,16 @@ class DRSidebarViewController: NSViewController {
             })
             task.resume()
         }
+    }
+    
+    func openLoginWebView() {
+        // TODO: We actually want to call below code upon user click on login button
+        let authorizeUrlAsString = String(format: "%@?client_id=%@&response_type=%@&state=%@&redirect_uri=%@&duration=%@&scope=%@", DRAppConstants.buildURL(DRAppConstants.Endpoints.authorizeURL), DRAppConstants.clientID, "code", "test", DRAppConstants.redirectURI, "permanent", DRAppConstants.scope)
+        let authorizeUrl = NSURL(string: authorizeUrlAsString)
+        
+        NSWorkspace.sharedWorkspace().openURL(authorizeUrl!)
+        
+        let appleEventManager = NSAppleEventManager.sharedAppleEventManager()
+        appleEventManager.setEventHandler(self, andSelector: #selector(self.handleGetURLEvent(_:replyEvent:)), forEventClass: AEEventClass(kInternetEventClass), andEventID: AEEventID(kAEGetURL))
     }
 }

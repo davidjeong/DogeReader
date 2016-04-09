@@ -18,6 +18,7 @@
 		5383D80A1CADAEBF0082465F /* DRAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D8091CADAEBF0082465F /* DRAppConstants.swift */; };
 		5383D80B1CADBB7D0082465F /* DRAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D8091CADAEBF0082465F /* DRAppConstants.swift */; };
 		5383D80C1CADBB7E0082465F /* DRAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5383D8091CADAEBF0082465F /* DRAppConstants.swift */; };
+		53B101231CB8A5BB006209C1 /* DRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B101221CB8A5BB006209C1 /* DRModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		536EA1A01CAAB3DE0095F1C5 /* DogeReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogeReaderUITests.swift; sourceTree = "<group>"; };
 		536EA1A21CAAB3DE0095F1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5383D8091CADAEBF0082465F /* DRAppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRAppConstants.swift; sourceTree = "<group>"; };
+		53B101221CB8A5BB006209C1 /* DRModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				5383D8091CADAEBF0082465F /* DRAppConstants.swift */,
 				536EA1801CAAB3DE0095F1C5 /* DRAppDelegate.swift */,
 				532AB9541CAACDA40097C101 /* DRSidebarViewController.swift */,
+				53B101221CB8A5BB006209C1 /* DRModel.swift */,
 				532AB9521CAAC9F30097C101 /* DRMainSplitViewController.swift */,
 				536EA1871CAAB3DE0095F1C5 /* Assets.xcassets */,
 				536EA1891CAAB3DE0095F1C5 /* Main.storyboard */,
@@ -265,6 +268,7 @@
 			files = (
 				532AB9531CAAC9F30097C101 /* DRMainSplitViewController.swift in Sources */,
 				532AB9551CAACDA40097C101 /* DRSidebarViewController.swift in Sources */,
+				53B101231CB8A5BB006209C1 /* DRModel.swift in Sources */,
 				536EA1861CAAB3DE0095F1C5 /* DogeReader.xcdatamodeld in Sources */,
 				536EA1811CAAB3DE0095F1C5 /* DRAppDelegate.swift in Sources */,
 				5383D80A1CADAEBF0082465F /* DRAppConstants.swift in Sources */,
